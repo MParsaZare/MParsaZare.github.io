@@ -1,0 +1,16 @@
+{
+  "name": "MohammadParsa Zare",
+  "short_name": "MPz",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
