@@ -8,7 +8,7 @@ function copyEmailToClipboard() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         document.getElementById('mymailto').click();
     } else {
-        navigator.clipboard.writeText("m.parsazare@outlook.com");
+        navigator.clipboard.writeText("mparsazare.id@gmail.com");
     }
 }
 
