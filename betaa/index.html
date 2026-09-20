@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="MohammadParsa Zare - Developer">
+  <title>M.Parsa Zare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/favicon.png">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="cursor-orbit" id="cursorOrbit"><i></i><span></span></div>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="loader-grid"></div>
+    <div class="loader-mark"><img src="./assets/favicon.png" width="250px" height="250px"></div>
+    <div class="loader-copy"><span>LOADING...</span><strong id="loaderPercent">000%</strong></div>
+    <div class="loader-track"><i id="loaderBar"></i></div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav glass">
+      <a class="brand magnetic" href="#home" aria-label="Home"><span class="brand-icon"><img src="./assets/favicon.png" width="25px" height="25px"></span><span>M.Parsa Zare</span></a>
+      <div class="nav-spacer"></div>
+      <button class="menu-btn magnetic" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <div class="drawer-top"><span>MENU</span><button class="drawer-close magnetic" id="drawerClose" aria-label="Close menu">×</button></div>
+      <div class="drawer-links">
+        <a href="#home" data-close-menu><small>01</small><span>Home</span><b>↗</b></a>
+        <a href="#about" data-close-menu><small>02</small><span>About</span><b>↗</b></a>
+        <a href="#stack" data-close-menu><small>03</small><span>Stack</span><b>↗</b></a>
+        <a href="#contact" data-close-menu><small>04</small><span>Contact</span><b>↗</b></a>
+      </div>
+      <div class="drawer-bottom">
+        <span>APPEARANCE</span>
+        <div class="theme-switcher">
+          <button class="theme-option active magnetic" data-theme-choice="auto"><span>◌</span> Auto</button>
+          <button class="theme-option magnetic" data-theme-choice="dark"><span>☾</span> Dark</button>
+          <button class="theme-option magnetic" data-theme-choice="light"><span>☀</span> Light</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main id="home">
+    <section class="hero snap-section">
+      <div class="hero-content">
+        <div class="eyebrow reveal"><span class="pulse"></span> SOFTWARE DEVELOPER </div>
+        <h1 class="hero-title reveal">Hello. I'm <span class="gradient-text">Parsa</span><br>a <span class="outline-text">Developer</span></h1>
+        <div class="hero-actions reveal"><a href="#about" class="btn btn-primary magnetic">Explore <span>↗</span></a><a href="#contact" class="btn btn-ghost magnetic">Let's connect <span>→</span></a></div>
+        <div class="hero-meta reveal"><span>SCROLL TO EXPLORE</span><i class="scroll-line"></i></div>
+      </div>
+      <div class="hero-orb" aria-hidden="true"><div class="orb-ring ring-1"></div><div class="orb-ring ring-2"></div><div class="orb-ring ring-3"></div><div class="orb-core"><span>01</span><b>&lt;/&gt;</b></div><div class="code-chip chip-a">const ideas = () =&gt; build();</div><div class="code-chip chip-b">userExperience++</div><div class="code-chip chip-c">{ creative: true }</div></div>
+      <div class="hero-grid"></div>
+    </section>
+
+    <section class="marquee-section" aria-label="Skills"><div class="marquee"><div>MohammadParsa Zare <span>✦</span> DEVELOPER <span>✦</span> YZD <span>✦</span> MohammadParsa Zare <span>✦</span> DEVELOPER <span>✦</span> YZD <span>✦</span></div></div></section>
+
+    <section class="about snap-section" id="about">
+      <div class="section-head reveal"><span>02 / ABOUT</span><i></i><span>THE HUMAN BEHIND THE CODE</span></div>
+      <div class="about-grid">
+        <div class="portrait-wrap reveal"><div class="portrait-card"><div class="portrait-placeholder"><img src="./assets/avatar.png" width="200px" height="200px"></div><div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div><div class="portrait-label"><span>M.PARSA ZARE</span><small>DEVELOPER</small></div></div><div class="float-tag tag-1">BE <br> CREATIVE</div><div class="float-tag tag-2">01—∞</div></div>
+        <div class="about-copy"><p class="kicker reveal">JUST ANOTHER DEVELOPER...</p><h2 class="reveal">I am <em>MohammadParsa Zare</em></h2><p class="body-copy reveal"> I’m Seventeen years Old.I study at <code><a href="https://markar-yazd.ir/">Markar HighSchool</a></code>.Im a developer;I Live in Yazd. I like software development, web development, and iOS development.<br> You can contact me:<code><a href="mailto:mparsazare.id@gmail.com">mparsazare.id@gmail.com</a></code> .</p><div class="facts reveal"><div><strong>04+</strong><span>YEARS<br>BUILDING</span></div><div><strong>∞</strong><span>IDEAS</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="stack snap-section" id="stack">
+      <div class="section-head reveal"><span>03 / STACK</span><i></i><span>TOOLS I SPEAK</span></div>
+      <div class="stack-grid">
+        <article class="stack-card magnetic reveal"><span class="stack-no">01</span><div class="stack-logo">WEb</div><h3>HTML/CSS/JS<br>PHP/ASP</h3>
+        </h3><p>used to build websites & webapps...</p><div class="stack-glow"></div></article>
+        <article class="stack-card magnetic reveal"><span class="stack-no">02</span><div class="stack-logo">iOS</div><h3>Swift/Xcode</h3><p>used to develop Apple ECO SYSTEM (iOS,macOS etc.) Applications...</p><div class="stack-glow"></div></article>
+        <article class="stack-card magnetic reveal"><span class="stack-no">03</span><div class="stack-logo">ANDRD</div><h3>Java/Kotlin</h3><p>used to build Android Apps.</p><div class="stack-glow"></div></article>
+        <article class="stack-card magnetic reveal"><span class="stack-no">04</span><div class="stack-logo">DATA</div><h3>MySQL</h3><p>used to develop and data store and communication with sites and apps.</p><div class="stack-glow"></div></article>
+      </div>
+    </section>
+
+
+    <section class="contact snap-section" id="contact">
+      <div class="contact-glow"></div>
+      <div class="section-head reveal"><span>04 / CONTACT</span><i></i><span>CONNECT</span></div>
+      <div class="contact-layout">
+        <div class="contact-copy reveal"><p class="kicker">HAVE AN IDEA?</p><h2>Let's <br><span>connect <em>together.</em></span></h2><p>Drop a message, send a meme, or just say hi. The internet is more fun when we build cool stuff together.</p></div>
+        <div class="contact-card glass reveal">
+          <div class="contact-card-top"><span>FIND ME ONLINE</span><small>LINKS / 05</small></div>
+          <div class="social-grid">
+            <a class="social magnetic" href="https://t.me/MParsaZare" aria-label="Telegram"><b class="logo-slot"><img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram"></b><span>Telegram</span><small>@MParsaZare</small><i>↗</i></a>
+            <a class="social magnetic" href="https://instagram.com/M.ParsaZare" aria-label="Instagram"><b class="logo-slot"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram"></b><span>Instagram</span><small>M.ParsaZare</small><i>↗</i></a>
+            <a class="social magnetic" href="https://github.com/MParsaZare" aria-label="GitHub"><b class="logo-slot"><img src="https://cdn.simpleicons.org/github/808080" alt="GitHub"></b><span>GitHub</span><small>/MParsaZare</small><i>↗</i></a>
+      </div>
+    </section>
+    <footer class="footer"><div><span class="brand-icon"><img src="./assets/favicon.png" width="25px" height="25px"></span> M>Parsa Zare</div><span>© 2026 — ALL RIGHTS RESERVED</span></footer>
+  </main>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
